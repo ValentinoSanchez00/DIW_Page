@@ -1,12 +1,13 @@
 .footer{
     position: relative;
     margin-top: 8rem;
- width: 1000px;
+
     background-color: black;
     display: flex;
 animation-name: footer;
 animation-duration: 3s;
 animation-fill-mode: forwards;
+grid-area: footer;
 }
 .footer__cookies{
     width: 50%;
