@@ -1,0 +1,26 @@
+.footer{
+    position: relative;
+    margin-top: 8rem;
+ width: 1000px;
+    background-color: black;
+    display: flex;
+animation-name: footer;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+}
+.footer__cookies{
+    width: 50%;
+    border-right: 1px solid white;
+    color: white;
+    padding: 1rem;
+    font-size: 10px;
+}
+.footer__links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.link__class{
+    color: white;
+    border: 1px solid red;
+}
