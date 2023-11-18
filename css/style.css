@@ -9,6 +9,7 @@
     grid-template-areas: "header header"
                          "main main"
                         "footer footer";
+    animation: contenedor 3s forwards;
 }
 .header{
     grid-area: header;
@@ -16,6 +17,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
 
 }
 .header__img{
@@ -38,6 +40,7 @@
 .menu__items{
    transition: all 1s; 
    margin-right: 30px;
+   font-size: 1.5rem;
 }
 .menu__items:hover{
 transform: scale(1.5);
@@ -64,7 +67,7 @@ transform: scale(1.5);
     margin-bottom: 3rem;
 }
 .article__image{
-    width: 400px;
+    width: 200px;
     display:  none;
 }
 .article__info{
@@ -104,4 +107,103 @@ left: 0;
 .aside{
     display: none;
     grid-area: aside;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid white;
+    padding: 1rem;
+    color: white;
+
 }
+.aside__title{
+    font-size: 3rem ;
+    width:500px;
+    margin: 0 auto;
+
+}
+.aside__text{
+    font-size: 2rem;
+   
+    margin: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+.flex__article{
+    width: 700px;
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.targets{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    
+}
+.article__targets {
+    position: relative;
+    border: 1px solid white;
+    margin: 2rem;
+    margin-top: 5rem;
+    padding: 1rem;
+    overflow: hidden; 
+    position: relative;
+  }
+  
+  .article__targets::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: transform 0.4s;
+    z-index: -1;
+    transform: translateY(-100%);
+  }
+  
+  .article__targets:hover::before {
+    transform: translateY(0);
+  }
+  
+.target__img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    z-index: 10;
+    top: 0;
+    
+    }
+    .target__text{
+        margin-top: 3rem;
+        position: relative;
+        font-size: 1rem;
+    }
+    .image-container {
+        position: relative;
+        height: 500px; 
+        margin-top: 1rem;
+    }
+    
+    .aside__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        height: auto;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    img.activa {
+        opacity: 1;
+    }
+
