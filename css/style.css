@@ -5,51 +5,11 @@
 .contenedor{
     display: grid;
     grid-template-columns: auto 300px;
-    grid-template-rows: 100px 2fr 1fr;
+    grid-template-rows: 100px 2fr 300px;
     grid-template-areas: "header header"
                          "main main"
                         "footer footer";
     animation: contenedor 3s forwards;
-}
-.header{
-    grid-area: header;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-
-}
-.header__img{
-    display: none;
-    width: 100px;
-}
-.header__title{
-    color: white;
-    font-size: 2rem;
-}
-.header__nav{
-    padding: 1rem;
-    width: 600px;
-}
-.nav__menu{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-.menu__items{
-   transition: all 1s; 
-   margin-right: 30px;
-   font-size: 1.5rem;
-}
-.menu__items:hover{
-transform: scale(1.5);
-
-
-}
-.items__links{
-    color: white;
-    text-decoration: none;
 }
 .main{
     grid-area: main;
@@ -206,4 +166,103 @@ left: 0;
     img.activa {
         opacity: 1;
     }
+.blanco{
+    color: white;
+}
+.article__tabla{
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.tabla__text{
+    width: 40% ;
+    color: white;
+}
+.objetos__antiguos{
+    border-radius: 5px;
+    transition: all 1s;
 
+}
+.objetos__antiguos:hover{
+    transform: scale(0.75);
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr {
+    background-color: #f9f9f9;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    flex: 1 1 100%;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+ textarea, select {
+    flex: 1 1 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input,textarea{
+    background-color: #333;
+    flex: 1 1 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input:focus{
+    color: white;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1 1 100%;
+    transition: all 1s;
+}
+
+.button:hover {
+    background-color: #ccc;
+}
