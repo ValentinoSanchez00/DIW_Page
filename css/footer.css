@@ -20,8 +20,16 @@ grid-area: footer;
     width: 50%;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
+    margin: 1rem;
 }
 .link__class{
     color: white;
-    border: 1px solid red;
-}
+    font-size: 2rem;
+   transition: all 2s;
+
+
+
+.link__class:hover{
+transform: scale(2);
+}}
