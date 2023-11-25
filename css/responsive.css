@@ -2,6 +2,7 @@
     .header__img{
         display: block;
     }
+    
     .main__article{
         flex-direction: row-reverse;
     }
@@ -144,13 +145,14 @@
     
     
     }
+    .aside{
+        display: block;
+    }
 .footer__cookies{
     font-size: 2rem;
 }
 
-.aside{
-    display: block;
-}
+
 .article__text{
     font-size: 1.5rem;
 }

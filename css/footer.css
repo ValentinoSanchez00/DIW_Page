@@ -22,14 +22,16 @@ grid-area: footer;
     justify-content: space-around;
     align-items: flex-start;
     margin: 1rem;
+
 }
 .link__class{
     color: white;
     font-size: 2rem;
    transition: all 2s;
 
-
+}
 
 .link__class:hover{
 transform: scale(2);
-}}
+
+}
